@@ -1,0 +1,21 @@
+
+
+body {
+	background-color:#000000;
+	color:#ffffff; 
+	padding: 100px; 
+	margin: 0;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"
+}
+
+h1 {
+	color:orangered;
+	font-size:3em;
+	background-color:cornflowerblue;
+}
+
+.spooky {
+	background-color: #34ff67;
+	color: #200040;
+	padding: 50px; 
+}
