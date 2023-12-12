@@ -21,7 +21,7 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption {
 }
 /* Style rules for body and images */
 body {
-   background-color:#fff;
+   background-color:#000;
 }
 
 img {
@@ -115,7 +115,7 @@ main ul {
 /*Style rules for main content*/
 main {
 	clear: both;
-/*	background-color: #fff;*/
+	background-color: #fff;
 	padding: 2%; 
 	font-size: 1.25em;
 	font-family: 'Roboto Slab', serif;
