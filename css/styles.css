@@ -14,7 +14,7 @@ font-family: 'Roboto Slab', serif;
 
 /* CSS Reset */
 
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption,section, article, aside {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption,section, article, aside, table {
    margin: 0;
    padding:0;
    border: 0;	
@@ -248,6 +248,41 @@ article:nth-of-type(2) {
 	.tel-num {
 		font-size: 1.25em;
 	}
+	/*Tablet Viewport: Style Rules for table*/
+	table {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto; 
+		width: 100%;	
+	}
+	caption {
+		font-size: 2.5em;
+		font-weight: bold;
+		padding: 1%;
+	}
+	th, td {
+		border: 1px solid #000;
+		padding: 2%;
+	}
+	th {
+		background-color: #000;
+		color: #fff;
+		font-size: 1.5em;
+	}
+	
+	tr:nth-child(odd) {
+		background-color:#ccc;
+	}
+	
+	/* Tablet Viewport: Style Rules for Form Elements */
+	
+	form {
+		width: 70%;
+		margin: 0 auto; 
+		
+	}
+	
+	
 	/*Show mobile class and hide tablet-desktop class */
 	.mobile {
 		display:none;
@@ -358,10 +393,68 @@ article:nth-of-type(2) {
 		border-radius: 8px;
 	}
 
-
+	.map {
+		border: 8px solid #000;
+		width: 95%;
+		height: 50%;
+	}
+	
+	#form {
+		margin-top: 2%;
+		background:linear-gradient(to left, #888, #f2f2f2, #888);
+		padding: 2%;
+		border-radius: 20px;
+	}
+	
+	#form h2 {
+		text-align: center;
+	}
+	
+	
+	/* Style rules for form elements */
+	fieldset, input, select, textarea {
+		margin-bottom: 2%;
+	}
+	fieldset legend {
+		font-weight: bold;
+		font-size:  1.25em;
+	}
+	
+	label {
+		display: block;
+		padding-top: 3%;
+	}
+	
+	form #submit {
+		margin:0 auto;
+		border: none; 
+		display: block;
+		padding: 2%;
+		background:radial-gradient(#b3b3b3, #555); 
+		font-size: 1em;
+		border-radius: 10px;
+	}
+	/* End style rules form elements */
+	
 	#exercises {
 		clear:left;
 	}
+	
+	/* Desktop Viewport: Style rules for form elements */
+	form {
+		width: auto;
+	}
+	
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto; 
+		grid-gap: 20px;
+	}
+	
+	.btn {
+		grid-column: 1 / span 3;
+	}
+	
 }
 /*END of Media Query for Desktop Viewport*/
 /*Media Query for Large Desktop Viewports */
@@ -373,6 +466,9 @@ article:nth-of-type(2) {
 	#container {
 		width: 1920px; 
 		margin: 0 auto;
+	}
+	table {
+		width: 20%;
 	}
 }
 /*END Of Media Query for Deskstop*/
